@@ -19,19 +19,21 @@ uses ARduino IDE or direct avr-gcc to compile, both ok
 result  
 ![usart_print0xff_result.JPG](usart_print0xff_result.JPG)
 
-
+  
+    
 ### compile and batch file
 set the soruce code as 'main'
 ```
 set main=usart_print0xff.ino
 ```
 
-compiler option, specify .ino rather than general .c
+compiler option, specify *.ino rather than general *.c
 ```
 avr-gcc.exe -xc -Os -mmcu=at%mcu% -Wall -g -o %main%.out *.ino
 ```
 
-
+  
+  
 
 complete batch file
 
