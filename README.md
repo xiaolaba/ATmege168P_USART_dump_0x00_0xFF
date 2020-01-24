@@ -6,6 +6,16 @@ uses ARduino IDE or direct avr-gcc to compile, both ok
 
 115200, N81
 
+### how it works
+```
+  short i; // counter from 00 to 0xff
+  for (i = 0; i <=0xff; i++) {
+    usart_printhex(i);  // dump counter value, display as HEX
+    usart_putchar(' '); // space for next counter value and visual easy
+    if ((i & 0x0f) == 0x0f){ usart_putchar('\n');}  // fromat the display every 16th, change to new line
+```
+
+
 result  
 ![usart_print0xff_result.JPG](usart_print0xff_result.JPG)
 
