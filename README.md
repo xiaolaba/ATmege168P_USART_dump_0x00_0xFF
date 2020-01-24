@@ -6,7 +6,7 @@ uses ARduino IDE or direct avr-gcc to compile, both ok
 
 115200, N81
 
-result
+result  
 ![usart_print0xff_result.JPG](usart_print0xff_result.JPG)
 
 
